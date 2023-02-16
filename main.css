@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.header {
+    height: 100vh;
+    border: 1px solid rgba(255, 0, 0, 0);
+    background: #F9F9F9;
+}
+.container {
+    height: 635px;
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+    padding: 20px;
+}
+.header__content {
+    width: 815px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 90px;
+}
+.header__phone{
+    position: relative;
+    height: 590px;
+}
+.header__phone img:nth-child(1){
+    width: 465px;
+    height: 635px;
+}
+.header__phone img:nth-child(2){
+    width: 250px;
+    height: 541px;
+    position: absolute;
+    top: 25px;
+    left: 155px;
+}
+.header__regist {
+    width: 350px;
+    text-align: center;
+    border-radius: 3px;
+    background: #F9F9F9;
+}
+.logo{
+    margin-bottom: 25px;
+}
+.header__input{
+    height: 400px;
+    padding: 40px 41px 25px;
+    border: 1px solid #cecece;
+    margin-bottom: 10px;
+    background: white;
+}
+.header__input input{
+    width: 100%;
+    height: 38px;
+    padding: 20px 12px 12px;
+    /* background: #FAFAFA; */
+    background: transparent;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.header__input input:focus {
+    border: 1px solid #5c5c5c;
+    outline: none;
+}
+.from__group{
+    width: 268px;
+    width: 100%;
+    height: 39px;
+    margin-bottom: 6px;
+    position: relative;
+    background: #FAFAFA;
+}
+.label {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    z-index: 1;
+    transition: 0.3s;
+    font-size: 12px;
+    line-height: 14px;
+    color: #959595;
+}
+.header__input input:focus ~ .label,
+.header__input input:not(:placeholder-shown) ~ .label {
+    top: 3px;
+    font-size: 10px;
+    color: #959595;
+}
+.come {
+    width: 268px;
+    width: 100%;
+    padding: 7px 0;
+    margin-top: 5px;
+    background: rgba(0, 110, 255, 0.829);
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 20px;
+}
+.come a{
+    padding: 7px 113px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+}
+.header__regist--text {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 26px;
+    font-weight: 500;
+    color: #959595;
+    font-size: 15px;
+}
+.header__regist--text:before,
+.header__regist--text:after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    width: 50%;
+    height: 1px;
+    vertical-align: middle;
+    background: #D9D9D9;
+}
+.header__regist--text:before {
+    left: -20px;
+    margin-left: -50%;
+}
+.header__regist--text:after {
+    left: 20px;
+    margin-right: -50%;
+}
+.facebook{
+    width: 160px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+}
+.facebook__img {
+    width: 14px;
+}
+.facebook p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(0, 0, 114);
+}
+.header__regist--link {
+    font-size: 12px;
+    color: rgb(0, 46, 114);
+}
+.header__account {
+    padding: 22px 0;
+    font-size: 14px;
+    border: 1px solid #cecece;
+    background: white;
+}
+.header__account a{
+    font-weight: 500;
+    color: #0095F6;
+}
+.header__link {
+    padding-top: 21px;
+    background: #F9F9F9;
+    /* border: 2px solid red; */
+}
+.header__link p{
+    font-size: 14px;
+    margin-bottom: 21px;
+    color: #262626;
+}
+.header__link--img img{
+    width: 135px;
+    height: 40px;
+}
+.link__first {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 8px;
+}
+.link__first a,
+.link__second a{
+    color: rgb(153, 152, 152);
+    font-size: 13px;
+}
+.link__second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.link__second a:first-child{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .header__phone{
+        display: none;
+    }
+    .header__regist{
+        margin: auto;
+    }
+}
+@media (max-width: 425px){
+    .header{
+        padding-top: 100px;
+    }
+    .header__input,
+    .header__account{
+        border: none;
+    }
+}
+@media (max-width: 320px){
+    .header{
+        padding-top: 250px;
+    }
+    .header__input{
+        padding: 0;
+    }
+}
